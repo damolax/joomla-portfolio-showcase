@@ -1,1 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><extension version="5.0" type="template" client="site" method="upgrade"><name>aurel_studio</name><version>0.1.0</version><creationDate>2026-11-04</creationDate><author>Portfolio demonstration</author><description>Joomla template foundation for AUREL Studio. Requires real CMS configuration.</description><files><filename>index.php</filename><filename>templateDetails.xml</filename></files><positions><position>navigation</position><position>footer</position></positions></extension>
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="5.0" type="template" client="site" method="upgrade">
+    <name>aurel_studio</name>
+    <version>1.0.0</version>
+    <creationDate>2026-11-04</creationDate>
+    <author>Independent Portfolio Demonstration</author>
+    <description>AUREL Studio Joomla 5/6 site template. Responsive architecture/interiors theme with CMS positions and configurable CTA.</description>
+    <files>
+        <filename>index.php</filename>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>templateDetails.xml</filename>
+    </files>
+    <media destination="templates/site/aurel_studio" folder="media">
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+    </media>
+    <positions>
+        <position>menu</position><position>mobile-menu</position>
+        <position>search</position><position>hero</position>
+        <position>breadcrumbs</position><position>sidebar</position>
+        <position>bottom</position><position>footer-1</position>
+        <position>footer-2</position><position>footer-3</position>
+    </positions>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="AUREL Template Options">
+                <field name="cta_text" type="text" label="Header CTA Text" default="Discuss a project"/>
+                <field name="cta_url" type="text" label="Header CTA URL" default="index.php?option=com_contact&amp;view=categories" filter="raw"/>
+                <field name="footer_text" type="text" label="Footer Text" default="AUREL Studio / Interiors"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

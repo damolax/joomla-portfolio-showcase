@@ -1,0 +1,14 @@
+/* Joomla native component and menu UI adapted to AUREL */
+.aurel-content{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;min-height:50vh;padding-top:80px;padding-bottom:100px}
+.aurel-content:has(.aurel-sidebar){grid-template-columns:minmax(0,2.3fr) minmax(200px,1fr)}
+.site-nav ul{display:flex;align-items:center;gap:19px;list-style:none;padding:0;margin:0}.site-nav li{margin:0;padding:0}.site-nav a{font-size:11px;text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}.site-nav li.current>a,.site-nav li.active>a{color:#f0d4a6;opacity:1}
+.mobile-nav ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}.mobile-nav a{padding:6px 0;display:block}
+.aurel-header-search{max-width:170px}.aurel-header-search input{background:transparent;color:white;border:1px solid #69766d;padding:9px 10px;width:100%;min-width:0}.aurel-header-search button{background:#f4f0e6;color:#222;border:0;padding:9px}
+.com-content-article h1,.page-header h1,.com-content-category-blog h1{font-family:Manrope,sans-serif;letter-spacing:-.055em;font-size:clamp(42px,5vw,84px)}
+.com-content-article__body{max-width:900px;font-size:17px;line-height:1.9}.com-content-article__body img{height:auto;max-width:100%}
+.com-content-category-blog .blog-items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+.com-content-category-blog .blog-item{padding-bottom:25px;border-bottom:1px solid #ccd1c5}.com-content-category-blog .blog-item img{width:100%;height:320px;object-fit:cover}
+.pagination ul{display:flex;gap:10px;list-style:none}.pagination a{padding:9px 16px;border:1px solid #c5ccc0}
+.aurel-footer-row{display:grid;grid-template-columns:1.3fr 2fr;gap:70px;align-items:start}.aurel-footer-modules{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}.aurel-footer-modules ul{padding:0;list-style:none}.aurel-footer-modules a{display:block;margin:9px 0}.aurel-sidebar{padding:30px;background:#e4e8df}
+@media(max-width:1100px){.aurel-header-search,.header-cta{display:none}.site-header .menu-toggle{display:block}.site-header .site-nav{display:none}.aurel-footer-row{grid-template-columns:1fr}}
+@media(max-width:750px){.aurel-content,.aurel-content:has(.aurel-sidebar){grid-template-columns:1fr;padding-top:40px}.com-content-category-blog .blog-items{grid-template-columns:1fr}.aurel-footer-modules{grid-template-columns:repeat(2,1fr)}}
