@@ -16,3 +16,9 @@ body{overflow-x:hidden}.skip-link{position:fixed;top:-100px;left:10px;background
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
 /* Enhanced list search */.project-tools{display:flex;align-items:center;gap:18px;border-top:1px solid #ccd3c7;border-bottom:1px solid #ccd3c7;padding:18px 0;margin-bottom:30px}.project-tools label{font-size:11px;letter-spacing:.13em;white-space:nowrap}.project-tools input{background:#e7e9e0;min-width:100px;flex:1;border:1px solid #bcc6b9;padding:12px 16px;font:14px DM Sans,sans-serif}.project-tools span{font-size:12px;white-space:nowrap;color:#758075}.service-grid .service-tile:hover{background:#37453a;color:white}.dark .service-tile{background:#2a342c;color:#f1ede3}.dark .service-tile:hover{background:#435347}.closing .text-link{border-color:#8e988d}.footer-bottom{align-items:start;gap:25px}.article-card[hidden]{display:none!important}@media(max-width:750px){.project-tools{flex-wrap:wrap;gap:10px}.project-tools input{flex-basis:100%}.site-header .search-launch{margin-left:auto}.site-header .menu-toggle{display:block}}
+
+/* Tablet navigation: visible menu must always have an open state */
+@media (min-width:751px) and (max-width:1080px){
+.site-header .mobile-nav.open{display:flex;position:absolute;left:0;right:0;top:96px;z-index:95;background:#202724;padding:24px 35px;flex-direction:column;gap:14px;box-shadow:0 20px 30px #0003}
+.site-header .mobile-nav.open a{color:#f4f1e9;font-size:14px;padding:5px 0}
+}
