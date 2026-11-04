@@ -53,7 +53,7 @@ $menuClass = $menu ? ' menu-' . (int) $menu->id : '';
     </header>
     <jdoc:include type="modules" name="hero" style="none" />
     <jdoc:include type="modules" name="breadcrumbs" style="none" />
-    <jdoc:include type="message" />
+    <jdoc:include type="messages" />
     <main id="main-content" class="aurel-content container">
         <div class="aurel-main"><jdoc:include type="component" /></div>
         <?php if ($this->countModules('sidebar')) : ?>
